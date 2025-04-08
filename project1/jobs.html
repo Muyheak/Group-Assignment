@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Descriptions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7f6; /* Light grey background */
+    }
+    .section {
+      padding: 50px;
+      text-align: center;
+    }
+    .hero {
+      background-color: #5A3FA7; /* Main purple color */
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .hero a {
+      padding: 12px 25px;
+      background-color: #FFB74D; /* Highlight yellow */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .hero a:hover {
+      background-color: #F2A6D4; /* Light pink on hover */
+    }
+    .job-description-container {
+      background-color: white;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .job-description-container h2 {
+      color: #5A3FA7; /* Main purple color */
+      font-size: 1.8em;
+    }
+    .job-description-container p {
+      font-size: 1.1em;
+      line-height: 1.5;
+      margin: 20px 0;
+    }
+    .job-description-container ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .job-description-container ul li {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .cta-button {
+      padding: 12px 25px;
+      background-color: #34A9B7; /* Teal */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #2F3B47; /* Charcoal grey on hover */
+    }
+    footer {
+      text-align: center;
+      background-color: #2F3B47; /* Charcoal grey */
+      color: white;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>We Are Recruiting</h1>
+    <p>Join our team and make an impact!</p>
+    <a href="#job-description" class="cta-button">View Job Descriptions</a>
+  </div>
+
+  <!-- IT Support Technician Section -->
+  <div id="it-support" class="section job-description-container">
+    <h2>IT Support Technician</h2>
+    <p><strong>Location:</strong> Melbourne, VIC | <strong>Salary:</strong> AUD $55,000 – $70,000 | <strong>Work Type:</strong> Full-time</p>
     
+    <h3>About the Role</h3>
+    <p>We are looking for an IT Support Technician to help maintain and troubleshoot our company's IT infrastructure, ensuring smooth day-to-day operations.</p>
+    
+    <h3>Key Responsibilities</h3>
+    <ul>
+      <li>Provide technical support for internal staff</li>
+      <li>Install and configure hardware/software</li>
+      <li>Monitor IT systems for optimal performance</li>
+      <li>Assist with IT-related projects</li>
+      <li>Document IT procedures and maintain a knowledge base</li>
+    </ul>
+
+    <h3>Essential Requirements</h3>
+    <ul>
+      <li>Degree in IT or a related field</li>
+      <li>2+ years of IT support experience</li>
+      <li>Knowledge of Windows, macOS, and Linux</li>
+      <li>Networking and hardware troubleshooting skills</li>
+    </ul>
+
+    <h3>Preferable Requirements</h3>
+    <ul>
+      <li>Certifications: CompTIA A+, MCITP</li>
+      <li>Experience with cloud services like AWS or Azure</li>
+    </ul>
+
+    <a href="#" class="cta-button">Apply Now</a>
+  </div>
+
+  <!-- Data Scientist Section -->
+  <div id="data-scientist" class="section job-description-container">
+    <h2>Data Scientist</h2>
+    <p><strong>Location:</strong> Melbourne, VIC | <strong>Salary:</strong> AUD $80,000 – $100,000 | <strong>Work Type:</strong> Full-time</p>
+    
+    <h3>About the Role</h3>
+    <p>We are looking for a skilled Data Scientist to analyze and interpret complex datasets, providing actionable insights to guide business decisions.</p>
+    
+    <h3>Key Responsibilities</h3>
+    <ul>
+      <li>Analyze and interpret data to guide decision-making</li>
+      <li>Develop and implement machine learning models</li>
+      <li>Collaborate with teams to translate challenges into data solutions</li>
+      <li>Create reports and visualizations for stakeholders</li>
+    </ul>
+
+    <h3>Essential Requirements</h3>
+    <ul>
+      <li>Degree in Computer Science, Statistics, or related field</li>
+      <li>3+ years of experience in data analysis and machine learning</li>
+      <li>Proficiency in Python, R, SQL</li>
+      <li>Experience with data visualization tools (e.g., Tableau, Power BI)</li>
+    </ul>
+
+    <h3>Preferable Requirements</h3>
+    <ul>
+      <li>Master’s or PhD in Data Science or related field</li>
+      <li>Experience with big data technologies (Hadoop, Spark)</li>
+    </ul>
+
+    <a href="#" class="cta-button">Apply Now</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Company Name. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
-<h1>We are recruiting</h1>
