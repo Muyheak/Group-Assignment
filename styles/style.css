@@ -17,20 +17,15 @@ body {
     height: 70%;
     text-align: center;
   }
-  header {
-    background-color: #fefbff;
+  .header-apply {
+    background-color: #5A3FA7;
     padding: 1em 0;
     border-bottom: 2px solid #dcdbe1;
     box-shadow: 0px 1px 8px 1px #9faef9,
                 0px 2px 0px 0px #fafcfe,
                 0px -2px 0px 0px #34217d;
-  }
-  /* Header */
-  h1 {
-    color: #34217d;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
+    color: white;
   }
   
   /* Labels */
@@ -203,4 +198,3 @@ footer {
   color: white;
   padding: 20px;
 }
->>>>>>> 6a9b1d57db9e3d4de9e763d6f5c6946ca762b1af
