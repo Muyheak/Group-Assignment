@@ -12,10 +12,8 @@
             <h1>Welcome to Our Job Application Page</h1>
         </header><br>
     </div>
+            <h1 class="header-complete">Complete your application!</h1>
    <div class="container">
-        <h1 class="header-apply">Complete your application!</h1>
-        <form action="submit.php" method="post">
-            
             <label for="JBREF">Job Reference Number: </label>
                 <select name="job_ref-number" id="job_ref_number" required>
                     <option value="" disabled selected>Select a job reference number</option>
@@ -47,7 +45,8 @@
                     <br>
                 </div>
             </fieldset>
-            
+        </div class="container"><br><br>
+        <div class="container2">
             <div><br>
             <label for="Street">Street Address: </label>
             <input type="text" id="Street" name="Street" maxlength="50" placeholder="Please enter your street address" required><br><br>
@@ -80,6 +79,7 @@
 
             <label for="phone">Phone Number: </label>
             <input type="tel" id="phone" name="phone" pattern="(\d\s?){8,12}$" placeholder="0000000000" required><br><br>
+        </div class="container2">
 
             <fieldset>
                 <legend>Technical Skills: </legend>
