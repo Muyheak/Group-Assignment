@@ -128,10 +128,10 @@ body {
   text-align: center;
 }
 
-.hero {
+.hero{
   background-color: #5A3FA7; /* Main purple color */
   color: white;
-  height: 100vh;
+  height: 50pxvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,24 +142,14 @@ body {
 .hero h1 {
   font-size: 3em;
   margin: 0;
+  
 }
 
 .hero p {
   font-size: 1.2em;
 }
 
-.hero a {
-  padding: 12px 25px;
-  background-color: #FFB74D; /* Highlight yellow */
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-}
 
-.hero a:hover {
-  background-color: #F2A6D4; /* Light pink on hover */
-}
 
 .job-description-container {
   background-color: white;
@@ -213,3 +203,4 @@ footer {
   color: white;
   padding: 20px;
 }
+>>>>>>> 6a9b1d57db9e3d4de9e763d6f5c6946ca762b1af
