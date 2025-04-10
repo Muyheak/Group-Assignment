@@ -1,0 +1,115 @@
+/* General Container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefbff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: inset 0px 1px 8px 1px #9faef9,
+                0px 2px 0px 0px #fafcfe,
+                0px -2px 0px 0px #34217d,
+                -2px -2px 0px 0px #34217d,
+                2px -2px 0px 0px #34217d,
+                0px 0px 0px 6px #8880d5;
+  }
+  
+  /* Header */
+  h1 {
+    color: #34217d;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin: 0.8em 0 0.2em;
+    color: #34217d;
+    font-size: 1.1em;
+  }
+  
+  /* Inputs and Selects */
+  input[type="text"], input[type="email"], input[type="tel"], input[type="file"], select {
+    width: 100%;
+    padding: 0.8em 1em;
+    margin-bottom: 1.2em;
+    border-radius: 5px;
+    background-color: #fefbff;
+    border: 1px solid #dcdbe1;
+    box-shadow: inset 0px 1px 8px 1px #9faef9,
+                0px 2px 0px 0px #fafcfe,
+                0px -2px 0px 0px #34217d;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="file"]:focus, select:focus {
+    border-color: #5061be;
+    box-shadow: 0px 0px 8px 2px #5061be;
+  }
+  
+  /* Gender Radios */
+  fieldset {
+    border: 2px solid #34217d;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: inset 0px 1px 8px 1px #9faef9;
+    background-color: #fefbff;
+  }
+  
+  legend {
+    color: #34217d;
+    font-size: 1.2em;
+  }
+  
+  input[type="radio"] {
+    margin-right: 0.5em;
+  }
+  
+  input[type="radio"]:checked + label {
+    color: #5061be;
+  }
+  
+  /* State Select */
+  select {
+    background: #fefbff;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    border: 1px solid #dcdbe1;
+    box-shadow: inset 0px 1px 8px 1px #9faef9;
+  }
+  
+  /* Submit Button */
+  input[type="submit"] {
+    background-color: #5061be;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px #34217d;
+    transition: all 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3a4c96;
+    box-shadow: 0px 4px 6px 0px #34217d;
+  }
+  
+  /* Error Message Style */
+  small {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 0.2em;
+  }
