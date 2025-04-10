@@ -129,7 +129,7 @@ body {
 .hero {
   background-color: #5A3FA7; /* Main purple color */
   color: white;
-  height: 100vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
