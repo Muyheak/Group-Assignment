@@ -1,14 +1,13 @@
 /* General Container */
-body1 {
+  .grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
     font-family: Arial, sans-serif;
-    background-color: #fefbff;
+    background-color: #f4f7f6;
     margin: 0;
     padding: 0;
-  }
-  
+  } 
   .container {
     grid-column: 1;
     width: 80%;
@@ -18,7 +17,7 @@ body1 {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
-    height: 70%;
+    height: 90%;
     text-align: left;
   }
 
@@ -31,7 +30,7 @@ body1 {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
-    height: 70%;
+    height: 90%;
     text-align: left;
   }
 
@@ -89,17 +88,22 @@ body1 {
   }
   
   /* Gender Radios */
+
   fieldset {
     border: 2px solid #34217d;
     padding: 1em;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
     background-color: #fefbff;
+    margin: 0 auto;
+    width: 80%;
   }
   
   legend {
+    align-items: center;
     color: #34217d;
     font-size: 1.2em;
+    text-align: center;
   }
   
   input[type="radio"] {
@@ -108,6 +112,43 @@ body1 {
   
   input[type="radio"]:checked + label {
     color: #5061be;
+  }
+
+  .radio-row {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .checkbox-group {
+    display: block;
+    margin: 0 auto;  /* Center the fieldset */
+    width: 80%;  /* Adjust width as needed */
+}
+
+  .checkbox-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5em;
+    align-items: center;
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+
+  .other-skills {
+    grid-column: 2;
+    margin-top: 1em;
+    margin-right: 10px;
+  }
+
+  input[type="text"]#otherskills {
+    width: 700px;
+    height: 150px;
+    text-align: center;
   }
   
   /* State Select */
@@ -121,6 +162,9 @@ body1 {
   
   /* Submit Button */
   input[type="submit"] {
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 40px;
     background-color: #5061be;
     color: #fff;
     padding: 0.8em 1.5em;
@@ -143,6 +187,12 @@ body1 {
     font-size: 0.9em;
     display: block;
     margin-top: 0.2em;
+  }
+  .footer-apply {
+    text-align: center;
+    background-color: #2F3B47; /* Charcoal grey */
+    color: white;
+    padding: 20px;
   }
 
 
