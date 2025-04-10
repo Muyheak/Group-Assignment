@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Container */
 body {
     font-family: Arial, sans-serif;
@@ -115,6 +116,7 @@ body {
     display: block;
     margin-top: 0.2em;
   }
+=======
 /* Job Description */
 body {
   font-family: Arial, sans-serif;
@@ -213,3 +215,4 @@ footer {
   color: white;
   padding: 20px;
 }
+>>>>>>> 6a9b1d57db9e3d4de9e763d6f5c6946ca762b1af
