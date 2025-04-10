@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Job Application</title>
 </head>
 <body>
     <div>
         <header>
             <h1>Welcome to Our Job Application Page</h1>
-        </header>
+        </header><br>
     </div>
    <div class="container">
         <h1>Complete your application!</h1>
@@ -86,13 +86,17 @@
                 
                 <label for="skill1">Skill 1: </label>
                 <input type="checkbox" id="skill1" name="skill1" value="HTML" required><br><br>
+            </fieldset><br><br>
 
-                <legend for="otherskills">Other Skills: </legend>
+            <fieldset>
+
+                <legend for="otherskills">Other Skills: </legend><br>
                 <input type="text" id="otherskills" name="otherskills" 
                 maxlength="300"
+                rows="60"
                 placeholder="Please provide any other additional skills."
                 ><br><br>
-            </fieldset>
+            </fieldset><br><br>
 
             
 
