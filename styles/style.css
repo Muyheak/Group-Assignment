@@ -288,3 +288,69 @@ footer {
   padding: 20px;
 }
 
+/* Index Page Custom Styles */
+
+.index-hero {
+  margin-top: 0;
+  background-color: #5A3FA7;
+  padding: 1em 0;
+  border-bottom: 2px solid #dcdbe1;
+  box-shadow: 0px 1px 8px 1px #9faef9,
+              0px 2px 0px 0px #fafcfe,
+              0px -2px 0px 0px #34217d;
+  text-align: center;
+  color: white;
+}
+
+.index-hero h1 {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+}
+
+.index-hero p {
+  font-size: 1.2em;
+}
+
+.index-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f7f6;
+}
+
+.index-container {
+  background-color: white;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.index-container h2 {
+  color: #5A3FA7;
+  font-size: 1.8em;
+}
+
+.index-container p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.index-footer {
+  text-align: center;
+  background-color: #2F3B47;
+  color: white;
+  padding: 20px;
+}
+
+.index-footer a {
+  color: #9faef9;
+  text-decoration: none;
+}
+
+.index-footer a:hover {
+  text-decoration: underline;
+}
