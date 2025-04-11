@@ -387,6 +387,13 @@ h2 {
   margin-bottom: 10px;
 }
 
+section h2 {
+  background-color: #f0e6ff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 1.5em;
+}
+
 dl {
   color: black; 
 }
@@ -433,6 +440,7 @@ caption {
   font-weight: bold;
 }
 
+/* Group Photo */
 figure {
   text-align: center;
   width: fit-content;
@@ -448,10 +456,11 @@ img {
   transition: 0.3s ease;
 }
 
+/* Section boxes */
 section {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #fff;
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -466,6 +475,7 @@ form {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
   text-align: center;
   margin-top: 40px;
@@ -473,6 +483,11 @@ footer {
   color: white;
   border-radius: 8px;
 }
+
+
+
+
+
 .index-hero img {
   cursor: pointer;
 }
