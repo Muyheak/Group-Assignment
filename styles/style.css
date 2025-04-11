@@ -493,3 +493,12 @@ footer {
   object-position: center;   
   display: block;
 }
+body {
+  background: linear-gradient(135deg, #f4f7f6, #e4eaf5);
+}
+.index-hero img {
+  transition: transform 0.3s ease;
+}
+.index-hero img:hover {
+  transform: scale(1.1);
+}
