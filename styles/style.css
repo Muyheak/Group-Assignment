@@ -356,6 +356,7 @@ footer {
 }
 
 
+
 /* About Us */
 body {
   font-family: Arial, sans-serif;
@@ -394,6 +395,40 @@ section h2 {
   font-size: 1.5em;
 }
 
+/* Student Id */
+.student-id-card {
+  background-color: #f9f7ff;
+  border: 1px solid #d1c4e9;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(90, 63, 167, 0.1);
+}
+
+.student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.student:hover {
+  background-color: #f4e1ff;
+  transform: translate(5px);
+}
+
+.student.name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #5A3FA7;
+}
+
+/* Contributions */
 dl {
   color: black; 
 }
@@ -409,6 +444,7 @@ dd {
   padding-bottom: 10px;
 }
 
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
