@@ -1,47 +1,69 @@
-<!DOCTYPE html> <!-- Declares the document as HTML5 -->
-<html lang="en"> <!-- Sets the language of the document to English -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8"> <!-- Specifies the character encoding as UTF-8 -->
-  <meta name="description" content="Official homepage of TechNova - your innovative IT solutions partner."> <!-- Provides a brief description for search engines -->
-  <meta name="author" content="Your Group Name"> <!-- Sets the name of the page author -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on mobile devices -->
-  <title>TechNova - Welcome</title> <!-- Sets the title displayed on the browser tab -->
-  <link rel="stylesheet" href="styles/styles.css"> <!-- Links an external CSS file for page styling -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Official homepage of Vortina - your innovative IT solutions partner.">
+  <meta name="author" content="Your Group Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vortina - Welcome</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-  <header> <!-- Page header section -->
-    <img src="images/company-logo.png" alt="Vortina Logo" width="120"> <!-- Displays the company logo image -->
-    <h1>Welcome to TechNova</h1> <!-- Main heading welcoming visitors -->
-    <p>Your partner in cutting-edge IT solutions and talent.</p> <!-- Brief company slogan or description -->
-  </header>
+  <!-- Hero Header -->
+  <div class="hero">
+    <img src="images/image.png" alt="Vortina Logo" width="100" style="margin-bottom: 10px;">
+    <h1>Welcome to Vortina</h1>
+    <p>Your partner in cutting-edge IT solutions and talent.</p>
+  </div>
 
-  <nav> <!-- Navigation section with links to other pages -->
-    <ul>
-      <li><a href="index.html">Home</a></li> <!-- Link to the homepage -->
-      <li><a href="jobs.html">Jobs</a></li> <!-- Link to the job descriptions page -->
-      <li><a href="apply.html">Apply</a></li> <!-- Link to the job application form -->
-      <li><a href="about.html">About Us</a></li> <!-- Link to the group information page -->
-    </ul>
-  </nav>
+  <!-- Navigation Section -->
+  <section class="section">
+    <nav>
+      <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 2em; font-size: 1.2em; flex-wrap: wrap;">
+        <li><a href="index.html" style="text-decoration: none; color: #5A3FA7;">Home</a></li>
+        <li><a href="jobs.html" style="text-decoration: none; color: #5A3FA7;">Jobs</a></li>
+        <li><a href="apply.html" style="text-decoration: none; color: #5A3FA7;">Apply</a></li>
+        <li><a href="about.html" style="text-decoration: none; color: #5A3FA7;">About Us</a></li>
+      </ul>
+    </nav>
+  </section>
 
-  <main> <!-- Main content of the page -->
-    <section> <!-- A section about the company -->
-      <h2>Who We Are</h2> <!-- Subheading for the section -->
-      <p>Vortina is a leading IT firm committed to connecting skilled professionals with innovative tech roles. We are passionate about software, data, and system innovation.</p> <!-- Paragraph describing the company -->
-    </section>
+  <!-- Main Content Section -->
+  <main class="section">
 
-    <section> <!-- A section for contact information -->
-      <h2>Contact Us</h2> <!-- Subheading for contact info -->
-      <p>Feel free to reach out to us via email at 
-        <a href="mailto:info@Vortina.com.au">info@Vortina.com.au</a>. <!-- Clickable email address using mailto -->
+    <div class="job-description-container">
+      <h2>Who We Are</h2>
+      <p>
+        Vortina is a forward-thinking IT company dedicated to connecting people with opportunities. 
+        We specialise in providing robust solutions in software, automation, data analytics, and cloud technologies. 
+        Our team consists of passionate professionals who innovate with purpose.
       </p>
-    </section>
+    </div>
+
+    <div class="job-description-container">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to deliver impactful digital products and services that drive transformation 
+        and empower both individuals and organizations. At Vortina, technology meets human value.
+      </p>
+    </div>
+
+    <div class="job-description-container">
+      <h2>Contact Us</h2>
+      <p>
+        Feel free to reach out via email at 
+        <a href="mailto:info@vortina.com.au" style="color: #5A3FA7;">info@vortina.com.au</a> 
+        for business inquiries or partnership opportunities.
+      </p>
+    </div>
+
   </main>
 
-  <footer> <!-- Footer section -->
-    <p>&copy; 2025 Vortina Pty Ltd</p> <!-- Copyright notice -->
-    <p><a href="https://longmuyheak.atlassian.net/jira/software/projects/WEBTECH/boards/2">View our Jira Project</a></p> <!-- Link to the Jira project (to be updated with real URL) -->
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vortina Company. All rights reserved.</p>
+    <p><a href="https://longmuyheak.atlassian.net/jira/software/projects/WEBTECH/boards/2" style="color: #9faef9;">View our Jira Project</a></p>
   </footer>
 
 </body>
