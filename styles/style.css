@@ -354,3 +354,110 @@ footer {
 .index-footer a:hover {
   text-decoration: underline;
 }
+
+
+/* About Us */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; 
+  color: black; 
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #5A3FA7; 
+  color: white; 
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #5A3FA7;
+  margin-bottom: 10px;
+}
+
+dl {
+  color: black; 
+}
+
+dt {
+  font-weight: bold;
+  color: #5A3FA7; 
+  margin-top: 10px;
+}
+
+dd {
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #5A3FA7; 
+  margin-bottom: 30px;
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #5A3FA7; 
+  text-align: center;
+}
+
+caption {
+  font-size: 1.2em;
+  margin: 10px;
+  color: #5A3FA7; 
+  font-weight: bold;
+}
+
+figure {
+  text-align: center;
+  border: 2px solid #5A3FA7; 
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 80%;
+  max-width: 350px;
+  border-radius: 10px; 
+  transition: 0.3s ease;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin: 30px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+}
