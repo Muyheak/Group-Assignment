@@ -430,9 +430,9 @@ figure {
 }
 
 img {
-  width: 80%;
-  max-width: 350px;
-  border-radius: 10px; 
+  width: 70%;
+  max-width: 700px;
+  border-radius: 7px; 
   transition: 0.3s ease;
 }
 
