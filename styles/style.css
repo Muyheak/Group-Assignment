@@ -448,7 +448,7 @@ section h2 {
   margin-bottom: 10px;
   border-radius: 6px;
   background-color: #fff;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .student:hover {
@@ -478,8 +478,17 @@ dt {
 }
 
 dd {
-  margin-left: 20px;
-  padding-bottom: 10px;
+  background-color: #f4f0ff;
+  margin: 0;
+  padding: 15px 20px 20px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 6px solid #5A3FA7;
+  box-shadow: 0 4px 8px rgba(78, 58, 135, 0.1);
+  font-size: 1.05em;
+  color: #333;
+  position: relative;
+  transition: 0.3s ease
 }
 
 /* Table */
@@ -557,6 +566,11 @@ footer {
   color: white;
   border-radius: 8px;
 }
+
+
+
+
+/* Code */
 .index-hero img {
   cursor: pointer;
 }
