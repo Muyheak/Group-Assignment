@@ -422,9 +422,9 @@ section h2 {
   transform: translate(5px);
 }
 
-.student.name {
+.student .name {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #5A3FA7;
 }
 
