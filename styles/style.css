@@ -428,6 +428,10 @@ section h2 {
   color: #5A3FA7;
 }
 
+.id {
+  font-size: 0.9em;
+}
+
 /* Contributions */
 dl {
   color: black; 
