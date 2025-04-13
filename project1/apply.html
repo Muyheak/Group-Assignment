@@ -8,12 +8,23 @@
 </head>
 <body>
     <header class="header-apply">
-        <h1>Welcome to Our Job Application Page</h1>
+        <h1>Applicant Information</h1>
     </header>
+    <div class="nav-section">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mailto:info@namelesstech.com.au" style="color: #5A3FA7;">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
     <h1 class="header-complete">Complete your application!</h1>
+
     
-    <!-- Wrap entire form content in a single <form> -->
-    <form class="grid-layout" action="/submit" method="POST">
+    <form class="grid-layout" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" enctype="multipart/form-data">
         <div class="container">
             <label for="job_ref_number">Job Reference Number: </label>
             <select name="job_ref_number" id="job_ref_number" required>
@@ -80,14 +91,14 @@
             <input type="tel" id="phone" name="phone" pattern="(\d\s?){8,12}$" minlength="8" maxlength="12" placeholder="0000000000" required><br>
         </div>
 
-        <!-- Technical Skills Checkbox -->
         <fieldset class="checkbox-group">
             <legend>Technical Skills: </legend>
+            <div class="tskills">
             <p>Operating Systems, programming languages and others</p>
+            </div>
             <div class="checkbox-row">
                 <label for="skill1">Windows</label>
                 <input type="checkbox" id="skill1" name="skills" value="Windows">
-
                 <label for="skill2">Linux</label>
                 <input type="checkbox" id="skill2" name="skills" value="Linux">
 
@@ -96,7 +107,6 @@
 
                 <label for="skill4">Android</label>
                 <input type="checkbox" id="skill4" name="skills" value="Android">
-
                 <label for="pr1">Java</label>
                 <input type="checkbox" id="pr1" name="skills" value="Java">
 
@@ -114,15 +124,13 @@
             </div>
         </fieldset>
 
-        <!-- Other Skills Textarea -->
         <fieldset class="other-skills">
             <legend>Other Skills: </legend>
             <textarea id="otherskills" name="otherskills" rows="8" cols="50" maxlength="300" placeholder="Please provide any other additional skills."></textarea>
         </fieldset>
 
-        <!-- Submit Button (Centered) -->
-        <div class="submit-container">
-            <input type="submit" value="Submit">
+        <div class="submit">
+            <input type="submit" value="Apply">
         </div>
     </form>
 
