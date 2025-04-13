@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Job Application</title>
 </head>
-<header class="header-apply">
-    <h1>Welcome to Our Job Application Page</h1>
-</header><br>
 <body>
-<h1 class="header-complete">Complete your application!</h1>
-<div class="grid-layout">
-   <div class="container">
-            <label for="JBREF">Job Reference Number: </label>
-                <select name="job_ref-number" id="job_ref_number" required>
-                    <option value="" disabled selected>Select a job reference number</option>
-                    <option value="ITS01">ITS01</option>
-                    <option value="DTS02">DTS02</option>
-                    <option value="UID03">UID03</option>
-                </select><br><br>
+    <header class="header-apply">
+        <h1>Welcome to Our Job Application Page</h1>
+    </header>
+    <h1 class="header-complete">Complete your application!</h1>
+    
+    <!-- Wrap entire form content in a single <form> -->
+    <form class="grid-layout" action="/submit" method="POST">
+        <div class="container">
+            <label for="job_ref_number">Job Reference Number: </label>
+            <select name="job_ref_number" id="job_ref_number" required>
+                <option value="" disabled selected>Select a job reference number</option>
+                <option value="ITS01">ITS01</option>
+                <option value="DTS02">DTS02</option>
+                <option value="UID03">UID03</option>
+            </select><br><br>
 
             <label for="firstname">First Name: </label>
             <input type="text" id="firstname" name="firstname" maxlength="20" placeholder="Please enter your first name" required><br><br>
@@ -28,8 +30,8 @@
             <input type="text" id="lastname" name="lastname" maxlength="20" placeholder="Please enter your last name" required><br><br>
 
             <label for="dob">Date of Birth: </label>
-            <input type="text" id="dob" name="date" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br>
-          <br><br>
+            <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br>
+
             <fieldset>
                 <legend>Select your Gender: </legend>
                 <div class="radio-row">
@@ -41,12 +43,11 @@
 
                     <label for="Other">Other</label>
                     <input type="radio" id="Other" name="gender" value="Other">
-                    <br>
                 </div>
             </fieldset>
-        </div class="container">
+        </div>
+
         <div class="container2">
-            <div>
             <label for="Street">Street Address: </label>
             <input type="text" id="Street" name="Street" maxlength="50" placeholder="Please enter your street address" required><br>
 
@@ -54,78 +55,79 @@
             <input type="text" id="suburb" name="suburb" maxlength="50" placeholder="Please enter your suburb/town" required><br>
 
             <label for="state">State: </label>
-                <select name="state" id="state" required>
-                    <option value="" disabled selected>Select your State</option>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                </select><br>
-            
+            <select name="state" id="state" required>
+                <option value="" disabled selected>Select your State</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select><br>
+
             <label for="postcode">Postcode: </label>
             <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" placeholder="0000" required><br>
 
-            </div>
-                <label for="resume">Resume:</label>
-                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
 
             <label for="email">Email address: </label>
             <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
 
             <label for="phone">Phone Number: </label>
-            <input type="tel" id="phone" name="phone" pattern="(\d\s?){8,12}$" placeholder="0000000000" required><br>
-        </div class="container2">
+            <input type="tel" id="phone" name="phone" pattern="(\d\s?){8,12}$" minlength="8" maxlength="12" placeholder="0000000000" required><br>
+        </div>
 
-            <fieldset class="checkbox-group">
-                <legend>Technical Skills: </legend>
-                <p> Operating Systems, programming languages and others</p>
-                <div class="checkbox-row">
+        <!-- Technical Skills Checkbox -->
+        <fieldset class="checkbox-group">
+            <legend>Technical Skills: </legend>
+            <p>Operating Systems, programming languages and others</p>
+            <div class="checkbox-row">
                 <label for="skill1">Windows</label>
-                <input type="checkbox" id="skill1" name="skill1" value="Windows" required>
+                <input type="checkbox" id="skill1" name="skills" value="Windows">
 
                 <label for="skill2">Linux</label>
-                <input type="checkbox" id="skill2" name="skill2" value="Linux" required>
+                <input type="checkbox" id="skill2" name="skills" value="Linux">
 
                 <label for="skill3">iOS/MacOS</label>
-                <input type="checkbox" id="skill3" name="skill3" value="MacOS" required>
+                <input type="checkbox" id="skill3" name="skills" value="MacOS">
 
                 <label for="skill4">Android</label>
-                <input type="checkbox" id="skill4" name="skill4" value="Android" required>
-                
+                <input type="checkbox" id="skill4" name="skills" value="Android">
+
                 <label for="pr1">Java</label>
-                <input type="checkbox" id="pr1" name="pr1" value="Java" required>
+                <input type="checkbox" id="pr1" name="skills" value="Java">
 
                 <label for="pr2">Python</label>
-                <input type="checkbox" id="pr2" name="pr2" value="Python" required>
+                <input type="checkbox" id="pr2" name="skills" value="Python">
 
                 <label for="pr3">C++</label>
-                <input type="checkbox" id="pr3" name="pr3" value="C++" required>
+                <input type="checkbox" id="pr3" name="skills" value="C++">
 
                 <label for="pr4">JavaScript</label>
-                <input type="checkbox" id="pr4" name="pr4" value="JavaScript" required>
+                <input type="checkbox" id="pr4" name="skills" value="JavaScript">
 
                 <label for="pr5">HTML/CSS</label>
-                <input type="checkbox" id="pr5" name="pr5" value="HTML/CSS" required>
+                <input type="checkbox" id="pr5" name="skills" value="HTML/CSS">
             </div>
-            </fieldset>
+        </fieldset>
 
-            <div class="other-skills">
-                <legend for="otherskills">Other Skills: </legend><br>
-                <textarea type="text" id="otherskills" name="otherskills" rows="15" cols="100"
-                maxlength="300" placeholder="Please provide any other additional skills."></textarea><br><br>
-            </div>
-        </form>
-    </div>
+        <!-- Other Skills Textarea -->
+        <fieldset class="other-skills">
+            <legend>Other Skills: </legend>
+            <textarea id="otherskills" name="otherskills" rows="8" cols="50" maxlength="300" placeholder="Please provide any other additional skills."></textarea>
+        </fieldset>
+
+        <!-- Submit Button (Centered) -->
+        <div class="submit-container">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <footer class="footer-apply">
+        <p>&copy; 2025 TechNova Company. All rights reserved</p>
+    </footer>
 </body>
-</div>
-<br><br>
-<input type="submit" value="Submit" margin:>
-<footer class="footer-apply">
-     <p>&copy; 2025 TechNova Company. All rights reserved</p>
- </footer>
-
 </html>
