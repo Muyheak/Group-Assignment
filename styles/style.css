@@ -217,6 +217,33 @@ body {
   text-align: center;
 }
 
+.sidebar {
+  position: absolute;
+  top: 32%;
+  right: 3%;
+  text-align: left;
+  width: 200px;
+  background-color: #f4f7f6; /* Light grey background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  text-align: left;
+  font-size: 1em;
+  color: #000000; /* Main purple color */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .hero {
   margin-top: 0;
   margin-bottom: 0%;
