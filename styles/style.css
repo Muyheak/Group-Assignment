@@ -520,8 +520,6 @@ img {
   width: 80%;
   max-width: 700px;
   border-radius: 7px; 
-  transition: 0.3s ease;
-  margin: 0 auto;
 }
 
 /* Section boxes */
