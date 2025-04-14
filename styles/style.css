@@ -223,7 +223,7 @@ body {
   right: 2%;
   text-align: left;
   width: 220px;
-  background-color: #f4f7f6; /* Light grey background */
+  background-color: #f4f7f6;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -232,7 +232,7 @@ body {
 .sidebar h3 {
   text-align: left;
   font-size: 1em;
-  color: #000000; /* Main purple color */
+  color: #000000;
   margin-bottom: 10px;
   font-weight: bold;
 }
