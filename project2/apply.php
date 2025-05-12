@@ -23,14 +23,21 @@
       </div>
     <h1 class="header-complete">Complete your application!</h1>
 
+    <?php //This displays the error message in case there is an error with the submission of the form
+    if(isset($_GET['error'])) {
+        echo '<div class="error - message">';
+        echo htmlspecialchars(urldecode($GET['error']));
+        echo '</div>';
+    }
+
     
     <form class="grid-layout" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" enctype="multipart/form-data"><!--Form creation that connects to the given database that will storage the result-->
         <div class="container">
             <label for="job_ref_number">Job Reference Number: </label> <!--Dropdown list including our job reference numbers-->
             <select name="job_ref_number" id="job_ref_number" required>
                 <option value="" disabled selected>Select a job reference number</option>
-                <option value="ITS01">ITS01</option>
                 <option value="DTS02">DTS02</option>
+                <option value="ITS01">ITS01</option>
                 <option value="SWE03">SWE03</option>
                 <option value="UID04">UID04</option>
             </select><br><br>
@@ -69,22 +76,19 @@
             <label for="state">State: </label>
             <select name="state" id="state" required>
                 <option value="" disabled selected>Select your State</option>
-                <option value="VIC">VIC</option>
+                <option value="ACT">ACT</option>
                 <option value="NSW">NSW</option>
-                <option value="QLD">QLD</option>
                 <option value="NT">NT</option>
-                <option value="WA">WA</option>
+                <option value="QLD">QLD</option>
                 <option value="SA">SA</option>
                 <option value="TAS">TAS</option>
-                <option value="ACT">ACT</option>
+                <option value="VIC">VIC</option>
+                <option value="WA">WA</option>
+
             </select><br>
 
             <label for="postcode">Postcode: </label>
-            <input type="text" id="postcode" name="postcode" pattern="^(0[2-9]\d{2}|[1-9]\d{3})$" maxlength="4" placeholder="0000" required><br> <!--Postcode with required pattern-->
-
-            <label for="resume">Resume:</label>
-            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
-
+            <input type="text" id="postcode" name="postcode" pattern="^(0[2-9]\d{2}|[1-9]\d{3})$" maxlength="4" placeholder="0200-9999" required><br> <!--Postcode with required pattern-->
             <label for="email">Email address: </label>
             <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
 
@@ -99,32 +103,32 @@
             </div>
             <div class="checkbox-row">
                 <label for="skill1">Windows</label>
-                <input type="checkbox" id="skill1" name="skills" value="Windows">
+                <input type="checkbox" id="skill1" name="skills[]" value="Windows">
                 <label for="skill2">Linux</label>
-                <input type="checkbox" id="skill2" name="skills" value="Linux">
+                <input type="checkbox" id="skill2" name="skills[]" value="Linux">
 
                 <label for="skill3">iOS/MacOS</label>
-                <input type="checkbox" id="skill3" name="skills" value="MacOS">
+                <input type="checkbox" id="skill3" name="skills[]" value="MacOS">
 
                 <label for="skill4">Android</label>
-                <input type="checkbox" id="skill4" name="skills" value="Android">
+                <input type="checkbox" id="skill4" name="skills[]" value="Android">
                 <label for="pr1">Java</label>
-                <input type="checkbox" id="pr1" name="skills" value="Java">
+                <input type="checkbox" id="pr1" name="skills[]" value="Java">
 
                 <label for="pr2">Python</label>
-                <input type="checkbox" id="pr2" name="skills" value="Python">
+                <input type="checkbox" id="pr2" name="skills[]" value="Python">
 
                 <label for="pr3">C++</label>
-                <input type="checkbox" id="pr3" name="skills" value="C++">
+                <input type="checkbox" id="pr3" name="skills[]" value="C++">
 
                 <label for="pr4">JavaScript</label>
-                <input type="checkbox" id="pr4" name="skills" value="JavaScript">
+                <input type="checkbox" id="pr4" name="skills[]" value="JavaScript">
 
                 <label for="pr5">HTML/CSS</label>
-                <input type="checkbox" id="pr5" name="skills" value="HTML/CSS">
+                <input type="checkbox" id="pr5" name="skills[]" value="HTML/CSS">
 
                 <label for="pr6">SQL</label>
-                <input type="checkbox" id="pr6" name="skills" value="SQL">
+                <input type="checkbox" id="pr6" name="skills[]" value="SQL">
             </div>
         </fieldset>
 
