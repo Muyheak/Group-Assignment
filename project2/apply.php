@@ -13,27 +13,22 @@
     <div class="nav-section"> <!--Menu navigation-->
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="jobs.php">Jobs</a></li>
+            <li><a href="apply.php">Apply</a></li>
+            <li><a href="about.php">About Us</a></li>
             <li><a href="mailto:info@namelesstech.com.au" style="color: #5A3FA7;">Contact Us</a></li><!--"Contact us" button redirecting to email address-->
           </ul>
         </nav>
       </div>
     <h1 class="header-complete">Complete your application!</h1>
 
-    <?php //This displays the error message in case there is an error with the submission of the form
-    if(isset($_GET['error'])) {
-        echo '<div class="error - message">';
-        echo htmlspecialchars(urldecode($GET['error']));
-        echo '</div>';
-    }
+
 
     
-    <form class="grid-layout" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" enctype="multipart/form-data"><!--Form creation that connects to the given database that will storage the result-->
+    <form class="grid-layout" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" enctype="multipart/form-data">//Form creation that connects to the given database that will storage the result-->
         <div class="container">
-            <label for="job_ref_number">Job Reference Number: </label> <!--Dropdown list including our job reference numbers-->
+            <label for="job_ref_number">Job Reference Number: </label> //Dropdown list including our job reference numbers-->
             <select name="job_ref_number" id="job_ref_number" required>
                 <option value="" disabled selected>Select a job reference number</option>
                 <option value="DTS02">DTS02</option>
@@ -41,7 +36,7 @@
                 <option value="SWE03">SWE03</option>
                 <option value="UID04">UID04</option>
             </select><br><br>
-            <!--Input for the user to fill in with personal information-->
+            //<!--Input for the user to fill in with personal information-->
             <label for="firstname">First Name: </label>
             <input type="text" id="firstname" name="firstname" maxlength="20" placeholder="Please enter your first name" required><br><br>
 
@@ -49,7 +44,7 @@
             <input type="text" id="lastname" name="lastname" maxlength="20" placeholder="Please enter your last name" required><br><br>
 
             <label for="dob">Date of Birth: </label>
-            <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br> <!--Date of birth with required pattern-->
+            <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br> //<!--Date of birth with required pattern-->
 
             <fieldset>
                 <legend>Select your Gender: </legend>
@@ -88,7 +83,7 @@
             </select><br>
 
             <label for="postcode">Postcode: </label>
-            <input type="text" id="postcode" name="postcode" pattern="^(0[2-9]\d{2}|[1-9]\d{3})$" maxlength="4" placeholder="0200-9999" required><br> <!--Postcode with required pattern-->
+            <input type="text" id="postcode" name="postcode" pattern="^(0[2-9]\d{2}|[1-9]\d{3})$" maxlength="4" placeholder="0200-9999" required><br> //<!--Postcode with required pattern-->
             <label for="email">Email address: </label>
             <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
 
@@ -137,7 +132,7 @@
             <textarea id="otherskills" name="otherskills" rows="8" cols="50" maxlength="300" placeholder="Please provide any other additional skills."></textarea>
         </fieldset>
 
-        <div class="submit"> <!--Submit button to end Form-->
+        <div class="submit"> //<!--Submit button to end Form-->
             <input type="submit" value="Apply">
         </div>
     </form>
