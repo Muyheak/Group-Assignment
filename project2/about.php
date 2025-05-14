@@ -24,10 +24,10 @@ Description: This is the page that gives the views/users/readers some informatio
     <div class="nav-section">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="jobs.php">Jobs</a></li>
+            <li><a href="apply.php">Apply</a></li>
+            <li><a href="about.php">About Us</a></li>
             <li><a href="mailto:info@namelesstech.com.au" style="color: #5A3FA7;">Contact Us</a></li>
           </ul>
         </nav>
@@ -79,7 +79,7 @@ Description: This is the page that gives the views/users/readers some informatio
             <dt>Cj Fu</dt>
             <dd>About Us Page</dd>
             <dt>Whole Team</dt>
-            <dd>Styling</dd>
+            <dd>Styling, management, processing, setting and enhancements (subject to change)</dd>
         </dl>
     </section>
 
