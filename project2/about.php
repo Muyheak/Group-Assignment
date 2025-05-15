@@ -105,9 +105,4 @@ Description: This is the page that gives the views/users/readers some informatio
         <p><strong>Interesting Fact:</strong> Feiyu is from Qingdao, a coastal city in China known for its beautiful beaches, seafood, and German-style architecture. Qingdao is a vibrant city located in eastern China. It is famous for its Tsingtao Brewery, scenic coastal views, and international sailing events. The city combines modern urban life with historical European-style buildings.</p>
     </section>
 
-<footer>
-    <p>&copy; 2025 NamelessTech Company. All rights reserved.</p>
-</footer>
-</body>
-
-</html>
+<?php include 'footer.inc'; ?>
