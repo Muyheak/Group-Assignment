@@ -1,32 +1,13 @@
 
 <!--
 Filename: About Us
-Last Modified: 14/05/25 12:39PM
+Last Modified: 15/05/25 14:15PM
 Description: This is the page that gives the views/users/readers some information about our team
 -->
 
 <?php include 'header.inc'; ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
-  <link href="../styles/style.css" rel="stylesheet">
-</head>
 
-<body>
-    <div class="nav-section">
-        <nav>
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="jobs.php">Jobs</a></li>
-            <li><a href="apply.php">Apply</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="mailto:info@namelesstech.com.au" style="color: #5A3FA7;">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+<?php include 'nav.inc'; ?>
 
     <!--Group Info-->
     <section>
@@ -124,9 +105,4 @@ Description: This is the page that gives the views/users/readers some informatio
         <p><strong>Interesting Fact:</strong> Feiyu is from Qingdao, a coastal city in China known for its beautiful beaches, seafood, and German-style architecture. Qingdao is a vibrant city located in eastern China. It is famous for its Tsingtao Brewery, scenic coastal views, and international sailing events. The city combines modern urban life with historical European-style buildings.</p>
     </section>
 
-<footer>
-    <p>&copy; 2025 NamelessTech Company. All rights reserved.</p>
-</footer>
-</body>
-
-</html>
+<?php include 'footer.inc'; ?>
