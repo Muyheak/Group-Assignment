@@ -1,3 +1,4 @@
+<?php include 'header.inc'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,6 @@
     <title>Job Application</title>
 </head>
 <body>
-    <header class="header-apply">
-        <h1>Applicant Information</h1>
-    </header>
     <div class="nav-section"> <!--Menu navigation-->
         <nav>
           <ul>
@@ -137,8 +135,6 @@
         </div>
     </form>
 
-    <footer class="footer-apply">
-        <p>&copy; 2025 NamelessTech Company. All rights reserved</p>
-    </footer>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
