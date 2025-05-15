@@ -8,17 +8,8 @@
     <title>Job Application</title>
 </head>
 <body>
-    <div class="nav-section"> <!--Menu navigation-->
-        <nav>
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="jobs.php">Jobs</a></li>
-            <li><a href="apply.php">Apply</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="mailto:info@namelesstech.com.au" style="color: #5A3FA7;">Contact Us</a></li><!--"Contact us" button redirecting to email address-->
-          </ul>
-        </nav>
-      </div>
+    <?php include 'nav.inc'; ?> <!--Include navigation bar-->
+
     <h1 class="header-complete">Complete your application!</h1>
 
 
@@ -136,5 +127,6 @@
     </form>
 
 <?php include 'footer.inc'; ?>
+<?php include 'nav.inc' ; ?>
 </body>
 </html>

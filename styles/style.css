@@ -1,4 +1,4 @@
-/* General Container */
+
 /* Navigation Container */
 .nav-section {
   margin-bottom: 40px;
@@ -6,6 +6,27 @@
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+nav ul li a {
+  color: #5A3FA7; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+  color: #34217d; 
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center;
+  gap: 2em;
+  font-size: 1.2em;
+  flex-wrap: wrap;
+}
+
+/* General Container */
 
 form.grid-layout {
   display: grid;
@@ -645,27 +666,4 @@ footer {
   .index-hero img {
     width: 30%;
   }
-}
-nav ul {
-  font-size: 1.2em; 
-}
-
-nav ul li a {
-  color: #5A3FA7; 
-  text-decoration: none; 
-  transition: color 0.3s ease; 
-}
-
-nav ul li a:hover {
-  color: #34217d; 
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex; 
-  justify-content: center;
-  gap: 2em;
-  font-size: 1.2em;
-  flex-wrap: wrap;
 }
