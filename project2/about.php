@@ -5,22 +5,17 @@ Last Modified: 14/05/25 12:39PM
 Description: This is the page that gives the views/users/readers some information about our team
 -->
 
+<?php include 'header.inc'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="../styles/style.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="description" content="About us"> 
-    <meta name="keywords" content="HTML5, tags"> 
-    <meta name="author" content="Our Group">
-    <title>About us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="../styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--Heading-->
-    <header>
-        <h1>About Us!</h1>
-    </header>
     <div class="nav-section">
         <nav>
           <ul>
