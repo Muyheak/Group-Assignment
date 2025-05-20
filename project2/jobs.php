@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/header.inc'; ?>
+<?php include 'header.inc'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +11,7 @@
 <body>
 
 
- <?php include __DIR__ . '/nav.inc'; ?>
+<?php include 'nav.inc'; ?> 
 
   <!--Use ChatGPT to generate a job description info-->
   <!--IT support Technician Job-->
@@ -162,7 +162,7 @@
   
   
 
-<?php include __DIR__ . '/footer.inc'; ?>
+    <?php include 'footer.inc'; ?>
 
 
 </body>
