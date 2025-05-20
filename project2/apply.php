@@ -17,14 +17,41 @@
     
     <form class="grid-layout" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" enctype="multipart/form-data"> <!--Form creation that connects to the given database that will storage the result-->
         <div class="container">
-            <label for="job_ref_number">Job Reference Number: </label> <!--Dropdown list including our job reference numbers-->
-            <select name="job_ref_number" id="job_ref_number" required>
-                <option value="" disabled selected>Select a job reference number</option>
-                <option value="DTS02">DTS02</option>
-                <option value="ITS01">ITS01</option>
-                <option value="SWE03">SWE03</option>
-                <option value="UID04">UID04</option>
-            </select><br><br>
+<label for="job_ref_number">Job Reference Number: </label>
+<select name="job_ref_number" id="job_ref_number" required>
+    <option value="" disabled selected>Select a job reference number</option>
+
+    <?php
+    // Database connection details
+    $host = "localhost";
+    $user = "root"; // default for XAMPP/MAMP
+    $password = ""; // default is empty in XAMPP
+    $dbname = "jobs"; // your database name
+
+    // Connect to the database
+    $conn = new mysqli($host, $user, $password, $dbname);
+
+    // Check for connection error
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Fetch job reference numbers
+    $sql = "SELECT job_ref_number FROM jobs ORDER BY sort_order ASC";
+    $result = $conn->query($sql);
+
+    if ($result && $result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $ref = htmlspecialchars($row["job_ref_number"]);
+            echo "<option value=\"$ref\">$ref</option>";
+        }
+    } else {
+        echo "<option disabled>No jobs available</option>";
+    }
+
+    $conn->close();
+    ?>
+</select><br><br>
            <!--Input for the user to fill in with personal information-->
             <label for="firstname">First Name: </label>
             <input type="text" id="firstname" name="firstname" maxlength="20" placeholder="Please enter your first name" required><br><br>
@@ -127,6 +154,5 @@
     </form>
 
 <?php include 'footer.inc'; ?>
-<?php include 'nav.inc' ; ?>
 </body>
 </html>
