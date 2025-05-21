@@ -63,7 +63,7 @@ Description: This is the page that gives the views/users/readers some informatio
     <section>
         <h2>This is us!</h2>
         <figure>
-            <a href="images/group_photo.jpg">  <img src="images/group_photo.jpg" alt="Photo of our group!" title="Filesize 7.72mb "></a>
+            <a href="images/group_photo.jpg">  <img src="../images/group_photo.jpg" alt="Photo of our group!" title="Filesize 7.72mb "></a>
             <figcaption>Our lovely, non-stop, hardworking team <strong>☝️(ﾟヮﾟ👆)</strong></figcaption>
         </figure>
     </section>
