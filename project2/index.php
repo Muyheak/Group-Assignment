@@ -13,7 +13,7 @@
  <!-- Hero Header -->
 <div class="index-hero">
   <h1>Welcome to</h1>
-  <a href="index.html">
+  <a href="index.php">
     <img src="images/image.png" alt="NamelessTech Logo" width="100" style="margin-bottom: 10px;"> <!--Logo image was created with AI (Sora) with the instruction "draw a logo as symbol of NamelessTech" in chinese-->
   </a>
   <h1>NamelessTech</h1>
