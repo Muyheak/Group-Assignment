@@ -5,7 +5,7 @@
     }
 
     require_once("settings.php");
-    $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+    $conn = @mysqli_connect($host, $username, $password, $dbname);
 ?>
 
 <?php include 'header.inc'; ?>
@@ -13,7 +13,7 @@
 <?php include 'nav.inc'; 
         require_once("settings.php");
         
-            $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+            $conn = @mysqli_connect($host, $username, $password, $dbname);
             if (!$conn) {
                 echo "<p>Database connection failure</p>";
             }
