@@ -5,6 +5,7 @@ include("setting.php");
 ?>
 
 <main class="section">
+
   <h2>HR Manager - Manage Applications</h2>
 
   <form method="post" action="manage.php">
@@ -24,6 +25,11 @@ include("setting.php");
       <input type="submit" name="delete_job" value="Delete by Job Reference">
     </div>
   </form>
+  <div class="logout-container">
+    <form method="post" action="logout.php">
+      <input type="submit" value="Log Out" class="logout-btn">
+    </form>
+  </div>
 
 <?php
 $conn = @mysqli_connect($host, $username, $password, $dbname);

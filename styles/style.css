@@ -770,11 +770,15 @@ tr:nth-child(even) {
 }
 
 td form {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
+
 
 td select {
   width: 100px;
