@@ -1,7 +1,7 @@
 
 <!--
 Filename: About Us
-Last Modified: 15/05/25 14:15PM
+Last Modified: 22/05/25 12:29PM
 Description: This is the page that gives the views/users/readers some information about our team
 -->
 
@@ -14,7 +14,7 @@ Description: This is the page that gives the views/users/readers some informatio
         <h2>Group Name & General Information</h2>
         <ul>
             <li><strong>Group Name:</strong> Nameless</li>
-            <li><strong>Class Time:</strong> Thursday 12:30PM (for all of us)</li>
+            <li><strong>Class Time:</strong> Thursday 12:30PM (This applies for all of us)</li>
             <li><strong>Tutor's Name:</strong> Rahul R</li>
         </ul>
     </section>
