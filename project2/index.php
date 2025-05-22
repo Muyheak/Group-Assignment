@@ -6,7 +6,7 @@
   <meta name="author" content="Your Group Name">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NamelessTech - Welcome</title>
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 <div class="index-hero">
   <h1>Welcome to</h1>
   <a href="index.php">
-    <img src="images/image.png" alt="NamelessTech Logo" width="100" style="margin-bottom: 10px;"> <!--Logo image was created with AI (Sora) with the instruction "draw a logo as symbol of NamelessTech" in chinese-->
+    <img src="../images/image.png" alt="NamelessTech Logo" width="100" style="margin-bottom: 10px;"> <!--Logo image was created with AI (Sora) with the instruction "draw a logo as symbol of NamelessTech" in chinese-->
   </a>
   <h1>NamelessTech</h1>
 </div>
