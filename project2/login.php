@@ -7,7 +7,7 @@
 
     </head>
 <body>
-<form method="post" action="process.php">
+<form method="post" action="manage.php">
     <label for="username">Username:</label>
     <input type="text" name="username" required><br>
 
