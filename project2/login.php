@@ -1,31 +1,22 @@
-<?php
-    session_start();
-    if (isset($_SESSION['authenticated']) && $_SESSION['authenticated']) {
-        header("Location: ./manage.php");
-    }
-
-    require_once("settings.php");
-    $conn = @mysqli_connect($host, $username, $password, $dbname);
-?>
-
 <?php include 'header.inc'; ?>
 
 <?php include 'nav.inc'; ?>
 
-    <div class="loginpage">
-        <form method="post" action="placeholder.php">
-            <h2>Manager Login</h2>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-    
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
+<html>
 
-            <input type="hidden" name="token" value="abc123">
-            <input type="submit" value="Login">
+<body>
+<form method="post" action="Processing.php">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required><br>
 
-<?php include 'includes/footer.inc'; ?>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required><br>
 
+    <input type="hidden" name="token" value="abc123">
+    <input type="submit" value="Login">
+</form>
 </body>
 
 </html>
+
+<?php include 'footer.inc'; ?>
