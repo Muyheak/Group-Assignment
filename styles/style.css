@@ -687,11 +687,3 @@ footer {
     width: 30%;
   }
 }
-
-    input[type="password"] {
-        width: 300px;     
-        height: 40px;     
-        font-size: 16px;  
-        padding: 8px;     
-        box-sizing: border-box; 
-    }
