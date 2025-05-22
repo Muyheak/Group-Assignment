@@ -28,7 +28,7 @@ if ($conn->connect_error) {
 <?php include 'nav.inc'; ?>
 
 <main>
-  <h1 style="text-align: center;">Job Descriptions</h1>
+
 
   <?php
   
