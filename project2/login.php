@@ -10,17 +10,10 @@
 
 <?php include 'header.inc'; ?>
 
-<?php include 'nav.inc'; 
-        require_once("settings.php");
-        
-            $conn = @mysqli_connect($host, $username, $password, $dbname);
-            if (!$conn) {
-                echo "<p>Database connection failure</p>";
-            }
-?>
+<?php include 'nav.inc'; ?>
 
     <div class="loginpage">
-        <form action="authentication.php" method="post" class="loginform" novalidate>
+        <form method="post" action="placeholder.php">
             <h2>Manager Login</h2>
             <label for="username">Username:</label>
             <input type="text" name="username" id="username">
