@@ -3,11 +3,9 @@
 <?php include 'nav.inc'; ?>
 
 <html>
-    <head>
 
-    </head>
 <body>
-<form method="post" action="manage.php">
+<form method="post" action="Processing.php">
     <label for="username">Username:</label>
     <input type="text" name="username" required><br>
 
@@ -19,8 +17,6 @@
 </form>
 </body>
 
-<footer>
-  <p>&copy; 2025 NamelessTech Company. All rights reserved.</p>
-</footer>
-
 </html>
+
+<?php include 'footer.inc'; ?>
