@@ -4,6 +4,14 @@ Filename: About Us
 Last Modified: 22/05/25 12:29PM
 Description: This is the page that gives the views/users/readers some information about our team
 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css"> 
+    <title>Job Application</title>
+</head>
 
 <?php include 'header.inc'; ?>
 
