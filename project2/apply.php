@@ -1,4 +1,4 @@
-<?php include 'header.inc'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../styles/style.css"> 
     <title>Job Application</title>
 </head>
-<body>
-    <?php include 'nav.inc'; ?> 
 
+    <?php include 'header.inc'; ?>
+
+    <?php include 'nav.inc'; ?> 
+<body>
     <h1 class="header-complete">Complete your application!</h1>
 
 

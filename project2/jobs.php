@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 ?>
 
-<?php include 'header.inc'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +23,11 @@ if ($conn->connect_error) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../styles/style.css" rel="stylesheet">
 </head>
-<body>
+
+<?php include 'header.inc'; ?>
 
 <?php include 'nav.inc'; ?>
-
+<body>
 <main>
 
 

@@ -10,13 +10,13 @@
   <title>NamelessTech - Welcome</title>
   <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
+
 
 <?php include 'header.inc'; ?>
 
 <?php include 'nav.inc'; ?>
 
-
+<body>
   <!-- Main Content Section -->
   <main class="section">
     <section class="index-hero-banner">
