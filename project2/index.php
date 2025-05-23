@@ -12,10 +12,8 @@
 </head>
 <body>
 
- <!-- Hero Header -->
 <?php include 'header.inc'; ?>
 
-<!-- Navigation Section -->
 <?php include 'nav.inc'; ?>
 
 
