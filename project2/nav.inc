@@ -1,3 +1,4 @@
+<!--Chat GPT was used for the "svg" sections asking him to make "Nice, small minimalistic icons regarding the themes home, jobs, apply, about, and contact us. In html"-->
 <div class="nav-section">
   <nav>
     <ul>
