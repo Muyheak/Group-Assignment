@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css"> <!--Link to CSS file-->
+    <link rel="stylesheet" href="../styles/style.css"> 
     <title>Job Application</title>
 </head>
 <body>
-    <?php include 'nav.inc'; ?> <!--Include navigation bar-->
+    <?php include 'nav.inc'; ?> 
 
     <h1 class="header-complete">Complete your application!</h1>
 
 
 
     
-    <form class="grid-layout" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" enctype="multipart/form-data"> <!--Form creation that connects to the given database that will storage the result-->
+    <form class="grid-layout" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" enctype="multipart/form-data"> 
         <div class="container">
 <label for="job_ref_number">Job Reference Number: </label>
 <select name="job_ref_number" id="job_ref_number" required>
@@ -24,9 +24,9 @@
     <?php
     // Database connection details
     $host = "localhost";
-    $user = "root"; // default for XAMPP/MAMP
-    $password = ""; // default is empty in XAMPP
-    $dbname = "jobs"; // your database name
+    $user = "root"; 
+    $password = ""; 
+    $dbname = "jobs"; 
 
     // Connect to the database
     $conn = new mysqli($host, $user, $password, $dbname);
@@ -36,7 +36,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Fetch job reference numbers
+    // GET job reference numbers
     $sql = "SELECT job_ref_number FROM jobs ORDER BY sort_order ASC";
     $result = $conn->query($sql);
 
@@ -60,7 +60,7 @@
             <input type="text" id="lastname" name="lastname" maxlength="20" placeholder="Please enter your last name" required><br><br>
 
             <label for="dob">Date of Birth: </label>
-            <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br> <!--Date of birth with required pattern-->
+            <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br>
 
             <fieldset>
                 <legend>Select your Gender: </legend>
