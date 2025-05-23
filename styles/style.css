@@ -216,20 +216,20 @@ form.grid-layout {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
   }
   
-input[type="submit"] {
-    display: inline-block;  
-    width: auto;   
-    margin-left: 0;       
-    padding: 0.8em 1.5em;
+  input[type="submit"] {
+    display: flex;
+    width: 30%;
     background-color: #5061be;
     color: #fff;
+    padding: 0.8em 1.5em;
     border: none;
     border-radius: 5px;
+    margin-left: 185%;
     font-size: 1.2em;
     cursor: pointer;
     box-shadow: 0px 2px 4px 0px #34217d;
     transition: all 0.3s;
-}
+  }
   
   input[type="submit"]:hover {
     background-color: #3a4c96;
