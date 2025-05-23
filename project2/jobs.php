@@ -1,170 +1,81 @@
+<?php
+// Step 1: Connect to the database
+$servername = "localhost";
+$username = "root"; 
+$password = "";     
+$dbname = "jobs";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+?>
+
 <?php include 'header.inc'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Descriptions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../styles/style.css" rel="stylesheet">
 </head>
-
 <body>
 
+<?php include 'nav.inc'; ?>
 
-<?php include 'nav.inc'; ?> 
+<main>
 
-  <!--Use ChatGPT to generate a job description info-->
-  <!--IT support Technician Job-->
-  <main>
-    <section id="it-support" class="job-description-container">
-      <h2>IT Support Technician (ITS01)</h2>
-      <p><strong>Location:</strong> Melbourne, VIC | <strong>Salary:</strong> AUD $55,000 – $70,000 | <strong>Work Type:</strong> Full-time</p>
 
-      <h3>About the Role</h3>
-      <p>We are looking for an IT Support Technician to help maintain and troubleshoot our company's IT infrastructure, ensuring smooth day-to-day operations.</p>
-
-      <h3>Key Responsibilities</h3>
-      <ul>
-        <li>Provide technical support for internal staff</li>
-        <li>Install and configure hardware/software</li>
-        <li>Monitor IT systems for optimal performance</li>
-        <li>Assist with IT-related projects</li>
-        <li>Document IT procedures and maintain a knowledge base</li>
-      </ul>
-
-      <h3>Essential Requirements</h3>
-      <ul>
-        <li>Degree in IT or a related field</li>
-        <li>2+ years of IT support experience</li>
-        <li>Knowledge of Windows, macOS, and Linux</li>
-        <li>Networking and hardware troubleshooting skills</li>
-      </ul>
-
-      <h3>Preferable Requirements</h3>
-      <ol>
-        <li>Certifications: CompTIA A+, MCITP</li>
-        <li>Experience with cloud services like AWS or Azure</li>
-      </ol>
-
-      <a href="./apply.html" class="cta-button">Apply Now</a>
-    </section>
-
-    <!--Data Science Job-->
-
-    <section id="data-scientist" class="job-description-container">
-      <h2>Data Scientist (DTS02)</h2>
-      <p><strong>Location:</strong> Melbourne, VIC | <strong>Salary:</strong> AUD $80,000 – $100,000 | <strong>Work Type:</strong> Full-time</p>
-
-      <h3>About the Role</h3>
-      <p>We are looking for a skilled Data Scientist to analyze and interpret complex datasets, providing actionable insights to guide business decisions.</p>
-
-      <h3>Key Responsibilities</h3>
-      <ul>
-        <li>Analyze and interpret data to guide decision-making</li>
-        <li>Develop and implement machine learning models</li>
-        <li>Collaborate with teams to translate challenges into data solutions</li>
-        <li>Create reports and visualizations for stakeholders</li>
-      </ul>
-
-      <h3>Essential Requirements</h3>
-      <ul>
-        <li>Degree in Computer Science, Statistics, or related field</li>
-        <li>3+ years of experience in data analysis and machine learning</li>
-        <li>Proficiency in Python, R, SQL</li>
-        <li>Experience with data visualization tools (e.g., Tableau, Power BI)</li>
-      </ul>
-
-      <h3>Preferable Requirements</h3>
-      <ol>
-        <li>Master’s or PhD in Data Science or related field</li>
-        <li>Experience with big data technologies (Hadoop, Spark)</li>
-      </ol>
-
-      <a href="./apply.html" class="cta-button">Apply Now</a>
-    </section>
-
-    <!--Software Engineer Job-->
-    <section id="software-engineer" class="job-description-container">
-      <h2>Software Engineer (SWE03)</h2>
-      <p><strong>Location:</strong> Melbourne, VIC | <strong>Salary:</strong> AUD $90,000 – $120,000 | <strong>Work Type:</strong> Full-time</p>
-
-      <h3>About the Role</h3>
-      <p>We are seeking a talented Software Engineer to design, develop, and maintain software applications that meet our clients' needs.</p>
-
-      <h3>Key Responsibilities</h3>
-      <ul>
-        <li>Develop and maintain software applications</li>
-        <li>Collaborate with cross-functional teams to define requirements</li>
-        <li>Troubleshoot and debug applications</li>
-        <li>Participate in code reviews and maintain coding standards</li>
-      </ul>
-
-      <h3>Essential Requirements</h3>
-      <ul>
-        <li>Bachelor's degree in Computer Science or related field</li>
-        <li>3+ years of software development experience</li>
-        <li>Proficiency in Java, C#, or Python</li>
-        <li>Experience with RESTful APIs and microservices architecture</li>
-      </ul>
-
-      <h3>Preferable Requirements</h3>
-      <ol>
-        <li>Experience with cloud platforms (AWS, Azure)</li>
-        <li>Kubernetes or Docker experience is a plus</li>
-      </ol>
-
-      <a href="./apply.html" class="cta-button">Apply Now</a>
-    </section>
-    <section id="ui-designer" class="job-description-container">
-
-      <!--UI Designer Job-->
-      <h2>UI Designer (UID04)</h2>
-      <p><strong>Location:</strong> Melbourne, VIC | <strong>Salary:</strong> AUD $75,000 – $95,000 | <strong>Work Type:</strong> Full-time</p>
-    
-      <h3>About the Role</h3>
-      <p>We are seeking a creative and detail-oriented UI Designer to craft intuitive and visually appealing digital interfaces that enhance user experience across web and mobile platforms.</p>
-    
-      <h3>Key Responsibilities</h3>
-      <ul>
-        <li>Design user interfaces for websites, apps, and digital products</li>
-        <li>Create wireframes, mockups, and interactive prototypes</li>
-        <li>Collaborate with UX designers, developers, and stakeholders</li>
-        <li>Maintain consistency with design systems and brand guidelines</li>
-      </ul>
-    
-      <h3>Essential Requirements</h3>
-      <ul>
-        <li>Degree in Design, Human-Computer Interaction, or a related field</li>
-        <li>2+ years of professional UI design experience</li>
-        <li>Proficiency in Figma, Adobe XD, or Sketch</li>
-        <li>Strong understanding of layout, typography, and color theory</li>
-      </ul>
-    
-      <h3>Preferable Requirements</h3>
-      <ol>
-        <li>Experience with motion design or animation tools</li>
-        <li>Familiarity with front-end development (HTML, CSS, JavaScript)</li>
-      </ol>
-    
-      <a href="./apply.html" class="cta-button">Apply Now</a>
-    </section>
-    
-  </main>
-
- 
-    <aside class="sidebar">
-      <h3>For any further questions, feel free to contact us:</h3>
-      <ul>
-        <li><strong>Contact us:</strong> (+61) 12 345 678</li>
-        <li><strong>Office location:</strong> 123 Burwood, Hawthorn</li>
-      </ul>
-    </aside>
+  <?php
   
+  $sql = "SELECT * FROM jobs";
+  $result = $conn->query($sql);
+
   
+  if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+      echo '<section class="job-description-container">';
+      echo '<h2>' . htmlspecialchars($row["job_title"]) . ' (' . htmlspecialchars($row["job_ref_number"]) . ')</h2>';
+      echo '<p><strong>Location:</strong> ' . htmlspecialchars($row["location"]) .
+           ' | <strong>Salary:</strong> AUD $' . number_format($row["salary_min"]) .
+           ' – $' . number_format($row["salary_max"]) . ' | <strong>Work Type:</strong> Full-time</p>';
 
-    <?php include 'footer.inc'; ?>
+      echo '<h3>About the Role</h3>';
+      echo '<p>' . nl2br(htmlspecialchars($row["job_description"])) . '</p>';
 
+      echo '<h3>Key Responsibilities</h3>';
+      echo $row["Key_responsibilities"]; 
+
+      echo '<h3>Essential Requirements</h3>';
+      echo $row["job_requirements"]; 
+      
+      echo '<h3>Preferable Requirements</h3>';
+      echo $row["Preferable_requirements"];
+
+      echo '<a href="apply.php" class="cta-button">Apply Now</a>';
+      echo '</section>';
+    }
+  } else {
+    echo "<p>No job listings found.</p>";
+  }
+
+  $conn->close();
+  ?>
+</main>
+
+<aside class="sidebar">
+  <h3>For any further questions, feel free to contact us:</h3>
+  <ul>
+    <li><strong>Contact us:</strong> (+61) 12 345 678</li>
+    <li><strong>Office location:</strong> 123 Burwood, Hawthorn</li>
+  </ul>
+</aside>
+
+<?php include 'footer.inc'; ?>
 
 </body>
-</html>
 </html>
