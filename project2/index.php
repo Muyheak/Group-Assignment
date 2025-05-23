@@ -12,11 +12,17 @@
 
  <!-- Hero Header -->
 <div class="index-hero">
-  <h1>Welcome to</h1>
-  <a href="index.php">
-    <img src="../images/image.png" alt="NamelessTech Logo" width="100" style="margin-bottom: 10px;"> <!--Logo image was created with AI (Sora) with the instruction "draw a logo as symbol of NamelessTech" in chinese-->
-  </a>
-  <h1>NamelessTech</h1>
+  <div class="welcome-to">
+    <h1>Welcome to</h1>
+  </div>
+  <div class="hero-logo">
+    <a href="index.php">
+      <img src="../images/image.png" alt="NamelessTech Logo" /> <!--Logo image was created with AI (Sora) with the instruction "draw a logo as symbol of NamelessTech" in chinese-->
+    </a>
+  </div>
+  <div class="namelesstech-text">
+    <h1>NamelessTech</h1>
+  </div>
 </div>
 
 <!-- Navigation Section -->
