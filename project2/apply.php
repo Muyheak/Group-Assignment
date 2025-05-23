@@ -17,28 +17,27 @@
 
 
     
-    <form class="grid-layout" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" enctype="multipart/form-data"> 
+    <form class="grid-layout" action="./project2/process_eoi.php" method="post" enctype="multipart/form-data"> 
         <div class="container">
 <label for="job_ref_number">Job Reference Number: </label>
 <select name="job_ref_number" id="job_ref_number" required>
     <option value="" disabled selected>Select a job reference number</option>
 
     <?php
-    // Database connection details
+
     $host = "localhost";
     $user = "root"; 
     $password = ""; 
     $dbname = "jobs"; 
 
-    // Connect to the database
+
     $conn = new mysqli($host, $user, $password, $dbname);
 
-    // Check for connection error
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // GET job reference numbers
+
     $sql = "SELECT job_ref_number FROM jobs ORDER BY sort_order ASC";
     $result = $conn->query($sql);
 
