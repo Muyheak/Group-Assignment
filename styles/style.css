@@ -17,7 +17,7 @@ nav ul {
   flex-wrap: wrap;
 }
 nav ul li a {
-  color: #5A3FA7; 
+  color: #4825a8; 
   text-decoration: none; 
   transition: color 0.3s ease; 
 }
@@ -29,19 +29,40 @@ nav ul li a:hover {
 .nav-link {
   color: #5A3FA7;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   display: flex;
+  justify-content: center;
+  text-align: center;
   align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: transparent;
+  flex-direction: column;
 }
-.home-icon-wrapper {
+
+.nav-link:hover {
+  background-color: #f3f0ff;
+  box-shadow: 0 4px 10px rgba(215, 76, 233, 0.15);
+  transform: translateY(-3px);
+  stroke: #34217d;
+}
+.icon-wrapper {
   display: flex;
-  align-items: center;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+.icon-wrapper svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+  display: block;
+}
+
 .home-icon {
   position: static;
-  margin-bottom: 5px ;
 }
 .nav-text {
   display: block;
