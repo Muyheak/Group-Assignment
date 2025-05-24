@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 24, 2025 at 12:04 PM
+-- Generation Time: May 24, 2025 at 12:17 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -20,6 +20,36 @@ SET time_zone = "+00:00";
 --
 -- Database: `jobs`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eoi`
+--
+
+CREATE TABLE `eoi` (
+  `EOInumber` int(11) NOT NULL,
+  `Job Reference Number` varchar(5) NOT NULL,
+  `First Name` varchar(50) NOT NULL,
+  `Last Name` varchar(50) NOT NULL,
+  `Street Address` varchar(100) NOT NULL,
+  `Suburb/Town` int(50) NOT NULL,
+  `State` int(50) NOT NULL,
+  `Postcode` varchar(4) NOT NULL,
+  `Email Address` int(40) NOT NULL,
+  `Phone Number` int(12) NOT NULL,
+  `Windows` tinyint(1) NOT NULL,
+  `Linux` tinyint(1) NOT NULL,
+  `iOS/MacOS` tinyint(1) NOT NULL,
+  `Android` tinyint(1) NOT NULL,
+  `Java` tinyint(1) NOT NULL,
+  `Python` tinyint(1) NOT NULL,
+  `C++` tinyint(1) NOT NULL,
+  `JavaScript` tinyint(1) NOT NULL,
+  `HTML/CSS` tinyint(1) NOT NULL,
+  `SQLskill` tinyint(1) NOT NULL,
+  `Other Skills` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -56,6 +86,12 @@ INSERT INTO `jobs` (`job_id`, `job_ref_number`, `job_title`, `job_description`, 
 --
 
 --
+-- Indexes for table `eoi`
+--
+ALTER TABLE `eoi`
+  ADD PRIMARY KEY (`EOInumber`);
+
+--
 -- Indexes for table `jobs`
 --
 ALTER TABLE `jobs`
@@ -64,6 +100,12 @@ ALTER TABLE `jobs`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `eoi`
+--
+ALTER TABLE `eoi`
+  MODIFY `EOInumber` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `jobs`
