@@ -66,7 +66,7 @@ if (!$stmt) {
 
 
 $stmt->bind_param(
-    "sssssssssiiiiiiiiis",
+    "sssssssssiiiiiiiiiis",
     $job_ref,
     $first_name,
     $last_name,
