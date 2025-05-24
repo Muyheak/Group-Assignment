@@ -63,7 +63,7 @@ Description: This is the page that gives the views/users/readers some informatio
             <dt>Cj Fu</dt>
             <dd>About Us Page</dd>
             <dt>Whole Team</dt>
-            <dd>Styling, management, processing, setting and enhancements (subject to change)</dd>
+            <dd>Styling, manage page, process eoi, settings page and enhancements page (subject to change)</dd>
         </dl>
     </section>
 
