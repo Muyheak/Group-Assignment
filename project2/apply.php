@@ -17,7 +17,7 @@
 
 
     
-    <form class="grid-layout" action="process_eoi.php" method="post" enctype="multipart/form-data"> 
+    <form class="grid-layout" action="./project2/process_eoi.php" method="post" enctype="multipart/form-data"> 
         <div class="container">
 <label for="job_ref_number">Job Reference Number: </label>
 <select name="job_ref_number" id="job_ref_number" required>
