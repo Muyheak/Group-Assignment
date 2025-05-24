@@ -13,6 +13,7 @@
 
     <h1>Enhancements</h1>
 
+    <form>
 <article class="eh1">
     <h2>Enhancement 1: Login and Logout Functionality</h2>
     <ol>
@@ -43,7 +44,9 @@
         </li>
     </ol>
 </article>
+</form>
 
+<form>
 <article class="eh1">
     <h2>Enhancement 2: Limited Login Attempts with Temporary Lockout</h2>
     <ol>
@@ -72,5 +75,6 @@
         </li>
     </ol>
 </article>
+</form>
 
 <?php include 'footer.inc'; ?>
