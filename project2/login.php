@@ -20,7 +20,7 @@
     <input type="password" name="password" required><br>
 
     <input type="hidden" name="token" value="abc123">
-    <input type="submit" value="Login">
+    <input type="submit" value="Login" class="login-button">
 </form>
 </body>
 
