@@ -11,14 +11,12 @@
 
     <?php include 'nav.inc'; ?>
 
-    <h1>Enhancements</h1>
-
-    <form>
+<form>
 <article class="eh1">
     <h2>Enhancement 1: Login and Logout Functionality</h2>
     <ol>
+        <h3>How it goes beyond the basic requirements of the assignment:</h3>
         <li>
-            <h3>How it goes beyond the basic requirements of the assignment:</h3>
             <p>The assignment does not require user authentication. By implementing login and logout features, we enable session-based user management, which is essential for real-world web applications.</p>
             <ul>
                 <li>Secure login using HTML forms and PHP sessions</li>
@@ -27,8 +25,8 @@
             </ul>
         </li>
 
+        <h3>What code is needed to implement the feature:</h3>
         <li>
-            <h3>What code is needed to implement the feature:</h3>
             <ul>
                 <li><code>session_start()</code> to initiate sessions</li>
                 <li><code>$_POST</code> for retrieving form inputs</li>
@@ -38,8 +36,8 @@
             </ul>
         </li>
 
+        <h3>Where we applied the extension:</h3>
         <li>
-            <h3>Where we applied the extension:</h3>
             <p>This enhancement is implemented in <code>Login.php</code>, <code>Processing.php</code>, and <code>Logout.php</code>. Users must log in to access protected content, and they can securely log out when finished.</p>
         </li>
     </ol>
@@ -50,8 +48,8 @@
 <article class="eh1">
     <h2>Enhancement 2: Limited Login Attempts with Temporary Lockout</h2>
     <ol>
+        <h3>How it goes beyond the basic requirements of the assignment:</h3>
         <li>
-            <h3>How it goes beyond the basic requirements of the assignment:</h3>
             <p>This enhancement improves security by limiting the number of login attempts, helping to prevent brute-force attacks.</p>
             <ul>
                 <li>Tracks the number of failed login attempts per session</li>
@@ -60,8 +58,8 @@
             </ul>
         </li>
 
+        <h3>What code is needed to implement the feature:</h3>
         <li>
-            <h3>What code is needed to implement the feature:</h3>
             <ul>
                 <li><code>$_SESSION['attempts']</code> to count failed login attempts</li>
                 <li><code>$_SESSION['locked']</code> to set a lockout time</li>
@@ -69,8 +67,8 @@
             </ul>
         </li>
 
+        <h3>Where we applied the extension:</h3>
         <li>
-            <h3>Where we applied the extension:</h3>
             <p>The login attempt limit and lockout logic are handled in <code>Processing.php</code>. Users exceeding 3 failed attempts are temporarily locked out for 10 seconds.</p>
         </li>
     </ol>
