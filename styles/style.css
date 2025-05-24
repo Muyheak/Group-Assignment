@@ -823,3 +823,9 @@ td input[type="submit"]:hover {
   background-color: #443080;
 }
 
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 2em auto;
+}
+
