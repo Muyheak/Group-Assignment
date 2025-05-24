@@ -14,7 +14,6 @@
 <form>
 <article class="eh1">
     <h2>Enhancement 1: Login and Logout Functionality</h2>
-    <ul>
         <h3>How it goes beyond the basic requirements of the assignment:</h3>
         <li>
             <p>The assignment does not require user authentication. By implementing login and logout features, we enable session-based user management, which is essential for real-world web applications.</p>
@@ -40,14 +39,12 @@
         <li>
             <p>This enhancement is implemented in <code>Login.php</code>, <code>Processing.php</code>, and <code>Logout.php</code>. Users must log in to access protected content, and they can securely log out when finished.</p>
         </li>
-    </ul>
 </article>
 </form>
 
 <form>
 <article class="eh1">
     <h2>Enhancement 2: Limited Login Attempts with Temporary Lockout</h2>
-    <ul>
         <h3>How it goes beyond the basic requirements of the assignment:</h3>
         <li>
             <p>This enhancement improves security by limiting the number of login attempts, helping to prevent brute-force attacks.</p>
@@ -71,7 +68,6 @@
         <li>
             <p>The login attempt limit and lockout logic are handled in <code>Processing.php</code>. Users exceeding 3 failed attempts are temporarily locked out for 10 seconds.</p>
         </li>
-    </ul>
 </article>
 </form>
 
