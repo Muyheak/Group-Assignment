@@ -876,20 +876,3 @@ td input[type="submit"]:hover {
   margin-bottom: 6px;
   list-style-type: none;
 }
-
-
-/* Footer Links */
-.footer-links {
-  margin-top: 10px;
-  font-size: 0.9em;
-}
-
-.footer-link {
-  color: #b0aac3;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
