@@ -876,3 +876,19 @@ td input[type="submit"]:hover {
   margin-bottom: 6px;
   list-style-type: none;
 }
+
+
+/* Login Button */
+.login-button {
+  background-color: #5a4bff;
+  color: white;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover {
+  background-color: #4737cc;
+}
