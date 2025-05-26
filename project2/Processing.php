@@ -16,7 +16,7 @@ $password = $_POST['password'] ?? '';
 $servername = "localhost";
 $db_username = "root";
 $db_password = "";
-$db_name = "login";
+$db_name = "jobs";
 
 $conn = new mysqli($servername, $db_username, $db_password, $db_name);
 
