@@ -68,14 +68,12 @@ nav ul li a:hover {
   display: block;
 }
 /* General Container */
-
 form.grid-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
   padding: 1em;
-  max-width: 1200px;
-  margin: 0 auto;
+
 }
   .container {
     grid-column: 1;
@@ -103,20 +101,6 @@ form.grid-layout {
     text-align: center;
   }
 
-  .header-apply {
-    margin-top: 0;
-    margin-bottom: 0%;
-    background-color: #5A3FA7;
-    padding: 1em 0;
-    border-radius: 0px;
-    border-bottom: 2px solid #dcdbe1;
-    box-shadow: 0px 1px 8px 1px #9faef9,
-                0px 2px 0px 0px #fafcfe,
-                0px -2px 0px 0px #34217d;
-    text-align: center;
-    height: max-content;
-    color: white;
-  }
   .header-complete {
     margin-top: -20px;
     border-radius: 20px;
