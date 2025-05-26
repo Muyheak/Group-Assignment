@@ -1,4 +1,4 @@
-<!--Chat GPT was used for the "svg" sections asking him to make "Nice, small minimalistic icons regarding the themes home, jobs, apply, about, and contact us. In html"-->
+<!--Chat GPT was used for the "svg" sections asking him to make "Nice, small minimalistic icons regarding the themes home, jobs, apply, about, enhancements, manage and contact us. In html"-->
 <div class="nav-section">
   <nav>
     <ul>
@@ -56,6 +56,31 @@
               <polyline points="224 64 128 144 32 64"/>
             </svg>
             <span class="nav-text">Contact Us</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="login.php" class="nav-link">
+          <span class="home-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+              <circle cx="128" cy="128" r="40" />
+              <path d="M184 128a56 56 0 0 0-3.5-19.3l18.1-14.2-16-27.7-21.6 8.8a56 56 0 0 0-17-9.9L144 40H112l-0.9 25.7a56 56 0 0 0-17 9.9l-21.6-8.8-16 27.7 18.1 14.2a56 56 0 0 0 0 38.6l-18.1 14.2 16 27.7 21.6-8.8a56 56 0 0 0 17 9.9L112 216h32l0.9-25.7a56 56 0 0 0 17-9.9l21.6 8.8 16-27.7-18.1-14.2a56 56 0 0 0 3.5-19.3Z" />
+            </svg>
+            <span class="nav-text">Manage</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="enhancements.php" class="nav-link">
+          <span class="home-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+              <path d="M200,224H56a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h96l56,56V216A8,8,0,0,1,200,224Z" />
+              <polyline points="152 32 152 88 208 88" />
+              <polygon points="128 150 136 172 160 172 140 186 148 208 128 194 108 208 116 186 96 172 120 172 128 150" />
+            </svg>
+            <span class="nav-text">Enhancements</span>
           </span>
         </a>
       </li>

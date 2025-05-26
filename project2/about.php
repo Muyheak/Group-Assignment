@@ -55,15 +55,22 @@ Description: This is the page that gives the views/users/readers some informatio
         <h2>Contributions to the project</h2>
         <dl>
             <dt>Feiyu Ding (Luke)</dt>
-            <dd>Homepage</dd>
+            <dd>Home/Index Page</dd>
+            <dd>Manage.php</dd>
             <dt>Muyheak Long</dt>
             <dd>Job Description Page</dd>
+            <dd>.inc Files</dd>
+            <dd>Setting.php</dd>
+            <dd>Job Description Database</dd>
             <dt>Tomás Cornejo</dt>
             <dd>Job Applications Page</dd>
+            <dd>Process EOI</dd>
+            <dd>EOI Table</dd>
             <dt>Cj Fu</dt>
             <dd>About Us Page</dd>
+            <dd>Enhancements</dd>
             <dt>Whole Team</dt>
-            <dd>Styling, manage page, process eoi, settings page and enhancements page (subject to change)</dd>
+            <dd>Styling</dd>
         </dl>
     </section>
 
