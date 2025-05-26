@@ -30,7 +30,8 @@ if ($conn->connect_error) {
 <body>
 <main>
 
-
+<!--use chatgpt to generate the connection with the database and -->
+<!--ask chatgpt how to connect with sql database-->  
   <?php
   
   $sql = "SELECT * FROM jobs";
