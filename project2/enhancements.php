@@ -55,7 +55,7 @@
     </ul>
 
     <h3>Where we applied the extension:</h3>
-    <p>The login attempt limit and lockout logic are handled in <code>Processing.php</code>. Users exceeding 3 failed attempts are temporarily locked out for 10 seconds.</p>
+    <p>The login attempt limit and lockout logic are handled in <code>Processing.php</code>. Users exceeding 3 failed attempts are temporarily locked out for 30 seconds.</p>
   </div>
 </section>
 
