@@ -12,15 +12,13 @@
 <?php include 'nav.inc'; ?>
 
 <body>
-<div class="login-wrapper">
-  <form method="post" action="Processing.php" class="login-form">
-      <h2>Log In</h2>
-
+<div class="container">
+  <form method="post" action="Processing.php">
       <label for="username">Username:</label>
-      <input type="text" name="username" id="username" required>
+      <input type="text" name="username" required><br>
 
       <label for="password">Password:</label>
-      <input type="password" name="password" id="password" required>
+      <input type="password" name="password" required><br>
 
       <input type="hidden" name="token" value="abc123">
       <input type="submit" value="Login" class="login-button">

@@ -13,17 +13,30 @@ if (isset($_SESSION['locked']) && time() < $_SESSION['locked']) {
 $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
 
-if ($username == 'Placeholder' && $password == '12345') {
+$servername = "localhost";
+$db_username = "root";
+$db_password = "";
+$db_name = "login";
+
+$conn = new mysqli($servername, $db_username, $db_password, $db_name);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$username = $conn->real_escape_string($username);
+$password = $conn->real_escape_string($password);
+
+$sql = "SELECT * FROM user WHERE Username = '$username' AND Password = '$password'";
+$result = $conn->query($sql);
+
+if ($result && $result->num_rows === 1) {
     $_SESSION['user'] = $username;
     $_SESSION['attempts'] = 0;
     header('Location: manage.php');
     exit();
 } else {
-    if (!isset($_SESSION['attempts'])) {
-        $_SESSION['attempts'] = 1;
-    } else {
-        $_SESSION['attempts']++;
-    }
+    $_SESSION['attempts'] = ($_SESSION['attempts'] ?? 0) + 1;
 
     if ($_SESSION['attempts'] >= $maxAttempts) {
         $_SESSION['locked'] = time() + $lockoutDuration;
@@ -33,4 +46,6 @@ if ($username == 'Placeholder' && $password == '12345') {
         echo "Invalid login. You have $remainingAttempts attempt(s) left. <a href='Login.php'>Try again</a>";
     }
 }
+
+$conn->close();
 ?>
