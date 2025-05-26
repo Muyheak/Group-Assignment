@@ -1,3 +1,13 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css"> 
+    <title>Log In</title>
+</head>
+
 <?php
 include("header.inc");
 include("nav.inc");
@@ -72,7 +82,7 @@ if (!empty($query)) {
               <th>Name</th>
               <th>Email</th>
               <th>Phone</th>
-              <th>Status</th>
+
               <th>Change Status</th>
             </tr>
           </thead><tbody>";
@@ -84,7 +94,7 @@ if (!empty($query)) {
       echo "<td>{$row['First Name']} {$row['Last Name']}</td>";
       echo "<td>{$row['Email Address']}</td>";
       echo "<td>{$row['Phone Number']}</td>";
-      echo "<td>{$row['status']}</td>";
+
       echo "<td>
         <form method='post' action='manage.php'>
           <input type='hidden' name='update_id' value='{$row['EOInumber']}'>
