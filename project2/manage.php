@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css"> 
-    <title>Log In</title>
-</head>
-
 <?php
 include("header.inc");
 include("nav.inc");
@@ -14,7 +5,6 @@ include("setting.php");
 ?>
 
 <main class="section">
-
   <h2>HR Manager - Manage Applications</h2>
 
   <form method="post" action="manage.php">
@@ -34,6 +24,7 @@ include("setting.php");
       <input type="submit" name="delete_job" value="Delete by Job Reference">
     </div>
   </form>
+
   <div class="logout-container">
     <form method="post" action="logout.php">
       <input type="submit" value="Log Out" class="logout-btn">
@@ -52,14 +43,14 @@ if (isset($_POST["list_all"])) {
   $query = "SELECT * FROM eoi";
 } elseif (isset($_POST["filter_job"])) {
   $jobref = $_POST["jobref"];
-  $query = "SELECT * FROM eoi WHERE jobref = '$jobref'";
+  $query = "SELECT * FROM eoi WHERE `Job Reference Number` = '$jobref'";
 } elseif (isset($_POST["filter_name"])) {
   $fname = $_POST["fname"];
   $lname = $_POST["lname"];
-  $query = "SELECT * FROM eoi WHERE fname LIKE '%$fname%' AND lname LIKE '%$lname%'";
+  $query = "SELECT * FROM eoi WHERE `First Name` LIKE '%$fname%' AND `Last Name` LIKE '%$lname%'";
 } elseif (isset($_POST["delete_job"])) {
   $jobref = $_POST["jobref"];
-  $query = "DELETE FROM eoi WHERE jobref = '$jobref'";
+  $query = "DELETE FROM eoi WHERE `Job Reference Number` = '$jobref'";
   if (mysqli_query($conn, $query)) {
     echo "<p>✅ Records with job reference '$jobref' deleted.</p>";
   } else {
@@ -89,10 +80,10 @@ if (!empty($query)) {
     while ($row = mysqli_fetch_assoc($result)) {
       echo "<tr>";
       echo "<td>{$row['EOInumber']}</td>";
-      echo "<td>{$row['jobref']}</td>";
-      echo "<td>{$row['fname']} {$row['lname']}</td>";
-      echo "<td>{$row['email']}</td>";
-      echo "<td>{$row['phone']}</td>";
+      echo "<td>{$row['Job Reference Number']}</td>";
+      echo "<td>{$row['First Name']} {$row['Last Name']}</td>";
+      echo "<td>{$row['Email Address']}</td>";
+      echo "<td>{$row['Phone Number']}</td>";
       echo "<td>{$row['status']}</td>";
       echo "<td>
         <form method='post' action='manage.php'>
