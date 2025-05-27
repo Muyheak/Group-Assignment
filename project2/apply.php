@@ -16,43 +16,42 @@
 
 
 
-    
     <form class="grid-layout" action="process_eoi.php" method="post" enctype="multipart/form-data"> 
         <div class="container">
-<label for="job_ref_number">Job Reference Number: </label>
-<select name="job_ref_number" id="job_ref_number" required>
-    <option value="" disabled selected>Select a job reference number</option>
+            <label for="job_ref_number">Job Reference Number: </label>
+            <select name="job_ref_number" id="job_ref_number" required>
+                <option value="" disabled selected>Select a job reference number</option>
 
-    <?php
+                    <?php
 
-    $host = "localhost";
-    $user = "root"; 
-    $password = ""; 
-    $dbname = "jobs"; 
-
-
-    $conn = new mysqli($host, $user, $password, $dbname);
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+                    $host = "localhost";
+                    $user = "root"; 
+                    $password = ""; 
+                    $dbname = "jobs"; 
 
 
-    $sql = "SELECT job_ref_number FROM jobs ORDER BY sort_order ASC";
-    $result = $conn->query($sql);
+                    $conn = new mysqli($host, $user, $password, $dbname);
 
-    if ($result && $result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            $ref = htmlspecialchars($row["job_ref_number"]);
-            echo "<option value=\"$ref\">$ref</option>";
-        }
-    } else {
-        echo "<option disabled>No jobs available</option>";
-    }
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+                
+                
+                    $sql = "SELECT job_ref_number FROM jobs ORDER BY sort_order ASC";
+                    $result = $conn->query($sql);
+                
+                    if ($result && $result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            $ref = htmlspecialchars($row["job_ref_number"]);
+                            echo "<option value=\"$ref\">$ref</option>";
+                        }
+                    } else {
+                        echo "<option disabled>No jobs available</option>";
+                    }
 
-    $conn->close();
-    ?>
-</select><br><br>
+                                $conn->close();
+                    ?>
+            </select><br><br>
            <!--Input for the user to fill in with personal information-->
             <label for="firstname">First Name: </label>
             <input type="text" id="firstname" name="firstname" maxlength="20" placeholder="Please enter your first name" required><br><br>
@@ -75,43 +74,11 @@
                     <label for="Other">Other</label>
                     <input type="radio" id="Other" name="gender" value="Other">
                 </div>
-            </fieldset>
-
-        </div>
-
-        <div class="container2">
-            <label for="Street">Street Address: </label>
-            <input type="text" id="Street" name="Street" maxlength="50" placeholder="Please enter your street address" required><br>
-
-            <label for="suburb">Suburb/Town: </label>
-            <input type="text" id="suburb" name="suburb" maxlength="50" placeholder="Please enter your suburb/town" required><br>
-
-            <label for="state">State: </label>
-            <select name="state" id="state" required>
-                <option value="" disabled selected>Select your State</option>
-                <option value="ACT">ACT</option>
-                <option value="NSW">NSW</option>
-                <option value="NT">NT</option>
-                <option value="QLD">QLD</option>
-                <option value="SA">SA</option>
-                <option value="TAS">TAS</option>
-                <option value="VIC">VIC</option>
-                <option value="WA">WA</option>
-
-            </select><br>
-
-            <label for="postcode">Postcode: </label>
-            <input type="text" id="postcode" name="postcode" pattern="^(0[2-9]\d{2}|[1-9]\d{3})$" maxlength="4" placeholder="0200-9999" required><br> <!--Postcode with required pattern-->
-            <label for="email">Email address: </label>
-            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
-
-            <label for="phone">Phone Number: </label>
-            <input type="tel" id="phone" name="phone" pattern="(\d\s?){8,12}$" minlength="8" maxlength="12" placeholder="0000000000" required><br>
-        </div>
-                    <fieldset class="checkbox-group">
+            </fieldset><br><br><br>
+        <fieldset class="checkbox-group">
             <legend>Technical Skills: </legend>
             <div class="tskills">
-            <p>Operating Systems, programming languages and others</p>
+                <p>Operating Systems, programming languages and others</p>
             
             <div class="checkbox-row">
                 <label for="skill1">Windows</label>
@@ -144,16 +111,47 @@
             </div>
             </div>
         </fieldset>
+    </div>
 
-        
+        <div class="container2">
+            <label for="Street">Street Address: </label>
+            <input type="text" id="Street" name="Street" maxlength="50" placeholder="Please enter your street address" required><br>
+
+            <label for="suburb">Suburb/Town: </label>
+            <input type="text" id="suburb" name="suburb" maxlength="50" placeholder="Please enter your suburb/town" required><br>
+
+            <label for="state">State: </label>
+            <select name="state" id="state" required>
+                <option value="" disabled selected>Select your State</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select><br>
+
+            <label for="postcode">Postcode: </label>
+            <input type="text" id="postcode" name="postcode" pattern="^(0[2-9]\d{2}|[1-9]\d{3})$" maxlength="4" placeholder="0000" required><br> <!--Postcode with required pattern-->
+
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
+
+            <label for="email">Email address: </label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" pattern="(\d\s?){8,12}$" minlength="8" maxlength="12" placeholder="0000000000" required>
+        </div>
 
         <fieldset class="other-skills">
             <legend>Other Skills: </legend>
             <textarea id="otherskills" name="otherskills" rows="8" cols="50" maxlength="300" placeholder="Please provide any other additional skills."></textarea>
         </fieldset>
-        </div>
 
-        <div class="submit"> <!--Submit button to end Form-->
+        <div class="submit">
             <input type="submit" value="Apply">
         </div>
     </form>

@@ -15,7 +15,7 @@
 <div class="container">
   <form method="post" action="Processing.php">
       <label for="username">Username:</label>
-      <input type="text" name="username" required><br>
+      <input type="text" name="username" required class="usernameinput"><br>
 
       <label for="password">Password:</label>
       <input type="password" name="password" required><br>
