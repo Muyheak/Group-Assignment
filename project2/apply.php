@@ -112,7 +112,7 @@
             <legend>Technical Skills: </legend>
             <div class="tskills">
             <p>Operating Systems, programming languages and others</p>
-            </div>
+            
             <div class="checkbox-row">
                 <label for="skill1">Windows</label>
                 <input type="checkbox" id="skill1" name="skills[]" value="Windows">
@@ -141,6 +141,7 @@
 
                 <label for="pr6">SQL</label>
                 <input type="checkbox" id="pr6" name="skills[]" value="SQL">
+            </div>
             </div>
         </fieldset>
 
