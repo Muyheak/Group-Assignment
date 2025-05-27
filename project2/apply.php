@@ -136,9 +136,6 @@
             <label for="postcode">Postcode: </label>
             <input type="text" id="postcode" name="postcode" pattern="^(0[2-9]\d{2}|[1-9]\d{3})$" maxlength="4" placeholder="0000" required><br> <!--Postcode with required pattern-->
 
-            <label for="resume">Resume:</label>
-            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
-
             <label for="email">Email address: </label>
             <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
 
