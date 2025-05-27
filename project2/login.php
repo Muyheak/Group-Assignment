@@ -12,7 +12,7 @@
 <?php include 'nav.inc'; ?>
 
 <body>
-<div class="container">
+<div class="login-container">
   <form method="post" action="Processing.php">
       <label for="username">Username:</label>
       <input type="text" name="username" required class="usernameinput"><br>

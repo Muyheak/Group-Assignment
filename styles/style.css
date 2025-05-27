@@ -828,7 +828,7 @@ td input[type="submit"]:hover {
 
 /* Login Button */
 .login-button {
-    grid-column: 2;
+    display:flex;
     width: 30%;
     background-color: #5061be;
     color: #fff;
@@ -838,6 +838,7 @@ td input[type="submit"]:hover {
     cursor: pointer;
     box-shadow: 0px 2px 4px 0px #34217d;
     transition: all 0.3s;
+    margin-left: 35%;
 }
 
 .login-button:hover {
@@ -870,4 +871,14 @@ input[type="password"] {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.login-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefbff;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
