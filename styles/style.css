@@ -72,12 +72,15 @@ form.grid-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
-  padding: 1em;
+  padding: 2rem;
+  max-width:1000px;
+  margin: 0 auto;
+  box-sizing:border-box;
 
 }
   .container {
     grid-column: 1;
-    width: 80%;
+    width: 100%;
     max-width: 550px;
     margin: 0 auto;
     padding: 2em;
@@ -86,11 +89,12 @@ form.grid-layout {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
     height: 90%;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .container2 {
     grid-column: 2;
-    width: 80%;
+    width: 100%;
     max-width: 550px;
     margin: 0 auto;
     padding: 2em;
@@ -99,6 +103,7 @@ form.grid-layout {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
     height: 90%;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .header-complete {
@@ -640,16 +645,6 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-form {
-  margin: 30px auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 600px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
 /* Footer */
 footer {

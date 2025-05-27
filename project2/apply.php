@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../styles/style.css"> 
     <title>Job Application</title>
 </head>
-
+<body>
     <?php include 'header.inc'; ?>
 
     <?php include 'nav.inc'; ?> 
-<body>
+
     <h1 class="header-complete">Complete your application!</h1>
 
 
@@ -76,6 +76,7 @@
                     <input type="radio" id="Other" name="gender" value="Other">
                 </div>
             </fieldset>
+
         </div>
 
         <div class="container2">
@@ -107,8 +108,7 @@
             <label for="phone">Phone Number: </label>
             <input type="tel" id="phone" name="phone" pattern="(\d\s?){8,12}$" minlength="8" maxlength="12" placeholder="0000000000" required><br>
         </div>
-
-        <fieldset class="checkbox-group">
+                    <fieldset class="checkbox-group">
             <legend>Technical Skills: </legend>
             <div class="tskills">
             <p>Operating Systems, programming languages and others</p>
@@ -144,10 +144,13 @@
             </div>
         </fieldset>
 
+        
+
         <fieldset class="other-skills">
             <legend>Other Skills: </legend>
             <textarea id="otherskills" name="otherskills" rows="8" cols="50" maxlength="300" placeholder="Please provide any other additional skills."></textarea>
         </fieldset>
+        </div>
 
         <div class="submit"> <!--Submit button to end Form-->
             <input type="submit" value="Apply">
